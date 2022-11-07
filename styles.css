@@ -39,7 +39,7 @@
     margin-top: 5px;
   }
 
-  @media (max-width: 768px) { 
+  @media (max-width: 320px) { 
     .calculadora td button{
         width:150px;
         height:200px;
@@ -94,7 +94,7 @@
 #division, #multiplicacion, #resta, #suma{
     margin-right: 10px;
 }
-@media (max-width: 768px) { 
+@media (max-width: 320px) { 
     #division, #multiplicacion, #resta, #suma{
         width:150px;
         height:200px;
