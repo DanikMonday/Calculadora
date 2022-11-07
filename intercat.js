@@ -4,7 +4,7 @@ var operandob;
 var operacion;
 
 function init(){
-    //variables
+    //Se asignan las variables a cada elemento llamandolo mediante su id
     var resultado = document.getElementById('resultado');
     var reset = document.getElementById('reset');
     var suma = document.getElementById('suma');
@@ -22,9 +22,15 @@ function init(){
     var ocho = document.getElementById('ocho');
     var nueve = document.getElementById('nueve');
     var cero = document.getElementById('cero');
+    var borrar = document.getElementById('borrar');
 
-    //Eventos de click
-  uno.onclick = function(e){
+/*    Se asigna la funcion correspondiente a cada botón que 
+    va a realiar cuando se de click sobre el botón*/
+ 
+ /*   Del uno al cero inicialmente va a concatenar dentro de la casilla 
+   de resultado los números que corresponden a los botones que se de click*/
+  
+    uno.onclick = function(e){
     resultado.textContent = resultado.textContent  + "1";
 }
 dos.onclick = function(e){
@@ -54,6 +60,8 @@ nueve.onclick = function(e){
 cero.onclick = function(e){
     resultado.textContent = resultado.textContent  + "0";
 }
+
+/* Para el caso en que se de click en los botones de operaciones se define una nueva función*/
 reset.onclick = function(e){
     resetear();
 }
@@ -116,3 +124,10 @@ igual.onclick = function(e){
     resetear();
     resultado.textContent = res;
   }
+  
+  const modo = document.querySelector('#modo');
+  const calculadora = document.querySelector('.calculadora');
+  modo.addEventListener('click', e =>{
+    calculadora.classList.toggle('dark_mode_calc');
+  }); 
+  
