@@ -63,6 +63,18 @@
     }
 }
 
+@media (max-width:350px) { 
+    .calculadora td button{
+        width:50px;
+        height:120px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 40px;
+        border: 3px solid black;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+}
+
   #modo{
     background-color: rgb(126, 88, 119);
     color: rgb(226, 202, 202);
@@ -125,6 +137,18 @@
         font-size: 40px;
         border: 3px solid black;
         margin-right: 20px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 350px) { 
+    #division, #multiplicacion, #resta, #suma{
+        width:50px;
+        height:120px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 40px;
+        border: 3px solid black;
+        margin-right: 10px;
         margin-top: 5px;
     }
 }
