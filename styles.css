@@ -66,7 +66,7 @@
 @media (max-width:350px) { 
     .calculadora td button{
         width:50px;
-        height:120px;
+        height:100px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 40px;
         border: 3px solid black;
@@ -144,7 +144,7 @@
 @media (max-width: 350px) { 
     #division, #multiplicacion, #resta, #suma{
         width:50px;
-        height:120px;
+        height:100px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 40px;
         border: 3px solid black;
